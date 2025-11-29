@@ -24,7 +24,7 @@ The first purpose of the capstone project is to give a chance to revise all the 
 
 # Project report Template
 
-## Title: [your title goes here]
+## Title: Personal Finance Mistake Detector AI
 
 ## Overview
 
