@@ -52,7 +52,7 @@ Make a short -  3-5 min video of yourself, put it on youtube/googledrive, and pu
 
 I plan to execute these steps to complete my project.
 
-- [TODO] Step 1: Collect and prepare a small personal finance knowledge base including budgeting rules, savings guidelines, emergency fund norms, and basic investment principles for use in retrieval-augmented generation (RAG).
+- [TODO] Step 1: Collect and prepare a small personal finance knowledge base including budgeting rules, savings guidelines, emergency fund norms, and basic investment principles for use in retrieval-augmented generation(RAG).
 
 - [TODO] Step 2 involves blah blah
 - [TODO] Step 3 involves blah blah
