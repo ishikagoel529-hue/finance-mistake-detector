@@ -28,11 +28,13 @@ The first purpose of the capstone project is to give a chance to revise all the 
 
 ## Overview
 
-[your overview goes here. My project does this that  etc]
+This project builds an AI assistant that helps users detect mistakes in their personal finance habits. The assistant takes inputs such as income, expenses, savings, and investments, and identifies common financial mistakes such as low savings rate, absence of emergency fund, overspending, or poor investment distribution. It also generates a financial health score and allows users to simulate what-if scenarios to see how changes in their financial behavior impact their overall financial well-being. The system is built using LangGraph, structured prompting, retrieval-augmented generation (RAG), and tool calling.
+
 
 ## Reason for picking up this project
 
-Explain how this project is aligned with this course content.
+I picked this project because it closely aligns with both my academic interest in finance and the core concepts taught in this course. Through this project, I am able to apply structured prompting, tool calling for numerical financial computations, semantic search, retrieval-augmented generation (RAG), and LangGraph for building a multi-step AI workflow. The project demonstrates how large language models can be used beyond simple chat systems, to build an intelligent decision-support system in the domain of personal finance, which directly reflects the objectives of this course.
+
 
 ## Video Summary Link: 
 
