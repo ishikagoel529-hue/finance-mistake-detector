@@ -58,8 +58,8 @@ I plan to execute these steps to complete my project.
 - [TODO] Step 4: Integrate retrieval-augmented generation (RAG) by connecting the financial knowledge base to the assistant for justifying detected mistakes and recommendations.
 - [TODO] Step 5: Design and implement the financial health score generation module to quantify the user’s overall financial well-being based on savings behavior, risk management, and spending patterns.
 - [TODO] Step 6: Implement the what-if scenario simulation module to allow users to test how changes in income, savings, or expenses affect their financial health score and detected mistakes.
-  - [TODO] Step 7: Design and implement the LangGraph workflow by defining the state, nodes (input parser, mistake detector, RAG retriever, scorer, and simulator), and transitions between them.
-  - [TODO] Step 8: Test the complete system on multiple user finance profiles, analyze the quality of mistake detection and recommendations, and document the results and limitations in the final report.
+- [TODO] Step 7: Design and implement the LangGraph workflow by defining the state, nodes (input parser, mistake detector, RAG retriever, scorer, and simulator), and transitions between them.
+- [TODO] Step 8: Test the complete system on multiple user finance profiles, analyze the quality of mistake detection and recommendations, and document the results and limitations in the final report.
 
 
 ## Conclusion:
