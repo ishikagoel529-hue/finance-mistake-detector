@@ -1,1 +1,35 @@
-*.env
+from typing import TypedDict
+from langgraph.graph import StateGraph, END
+
+
+# 1. Define the state that flows through the graph
+class FinanceState(TypedDict):
+    user_message: str
+    bot_message: str
+
+
+# 2. Define a very simple node (for now it just echoes the user)
+def echo_node(state: FinanceState) -> FinanceState:
+    user_text = state["user_message"]
+    reply = f"Echo from graph: {user_text}"
+    return {
+        "user_message": user_text,
+        "bot_message": reply,
+    }
+
+
+# 3. Build a tiny LangGraph with a single node
+graph_builder = StateGraph(FinanceState)
+graph_builder.add_node("echo", echo_node)
+graph_builder.set_entry_point("echo")
+graph_builder.add_edge("echo", END)
+
+graph = graph_builder.compile()
+
+
+# 4. Simple CLI to test it
+if __name__ == "__main__":
+    user_input = input("Type something: ")
+    result = graph.invoke({"user_message": user_input, "bot_message": ""})
+    print("Graph output:", result["bot_message"])
+
