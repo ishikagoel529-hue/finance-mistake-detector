@@ -53,11 +53,14 @@ Make a short -  3-5 min video of yourself, put it on youtube/googledrive, and pu
 I plan to execute these steps to complete my project.
 
 - [TODO] Step 1: Collect and prepare a small personal finance knowledge base including budgeting rules, savings guidelines, emergency fund norms, and basic investment principles for use in retrieval-augmented generation(RAG).
+- [TODO] Step 2: Design the input schema and structured prompts for collecting user financial information such as income, expenses, savings, liabilities, and investments in a consistent format.
+- [TODO] Step 3: Implement the core financial mistake detection logic using tool calling for numerical calculations such as savings rate, expense-to-income ratio, and emergency fund adequacy.
+- [TODO] Step 4: Integrate retrieval-augmented generation (RAG) by connecting the financial knowledge base to the assistant for justifying detected mistakes and recommendations.
+- [TODO] Step 5: Design and implement the financial health score generation module to quantify the user’s overall financial well-being based on savings behavior, risk management, and spending patterns.
+- [TODO] Step 6: Implement the what-if scenario simulation module to allow users to test how changes in income, savings, or expenses affect their financial health score and detected mistakes.
+  - [TODO] Step 7: Design and implement the LangGraph workflow by defining the state, nodes (input parser, mistake detector, RAG retriever, scorer, and simulator), and transitions between them.
+  - [TODO] Step 8: Test the complete system on multiple user finance profiles, analyze the quality of mistake detection and recommendations, and document the results and limitations in the final report.
 
-- [TODO] Step 2 involves blah blah
-- [TODO] Step 3 involves blah blah
-- ...
-- [TODO] Step n involves blah blah
 
 ## Conclusion:
 
