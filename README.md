@@ -28,7 +28,7 @@ The first purpose of the capstone project is to give a chance to revise all the 
 
 ## Overview
 
-This project builds an AI assistant that helps users detect mistakes in their personal finance habits. The assistant takes inputs such as income, expenses, savings, and investments, and identifies common financial mistakes such as low savings rate, absence of emergency fund, overspending, or poor investment distribution. It also generates a financial health score and allows users to simulate what-if scenarios to see how changes in their financial behavior impact their overall financial well-being. The system is built using LangGraph, structured prompting, retrieval-augmented generation (RAG), and tool calling.
+This project implements an AI assistant that helps users detect mistakes in their personal finance habits. The assistant takes inputs such as income, expenses, savings, and investments, and identifies common financial mistakes such as low savings rate, absence of emergency fund, overspending, or poor investment distribution. It also generates a financial health score and allows users to simulate what-if scenarios to see how changes in their financial behavior impact their overall financial well-being. The system is built using LangGraph, structured prompting, retrieval-augmented generation (RAG), and tool calling.
 
 
 ## Reason for picking up this project
@@ -50,21 +50,25 @@ Make a short -  3-5 min video of yourself, put it on youtube/googledrive, and pu
 
 ## Plan
 
-I plan to execute these steps to complete my project.
+## Plan
 
-- [TODO] Step 1: Collect and prepare a small personal finance knowledge base including budgeting rules, savings guidelines, emergency fund norms, and basic investment principles for use in retrieval-augmented generation(RAG).
-- [TODO] Step 2: Design the input schema and structured prompts for collecting user financial information such as income, expenses, savings, liabilities, and investments in a consistent format.
-- [TODO] Step 3: Implement the core financial mistake detection logic using tool calling for numerical calculations such as savings rate, expense-to-income ratio, and emergency fund adequacy.
-- [TODO] Step 4: Integrate retrieval-augmented generation (RAG) by connecting the financial knowledge base to the assistant for justifying detected mistakes and recommendations.
-- [TODO] Step 5: Design and implement the financial health score generation module to quantify the user’s overall financial well-being based on savings behavior, risk management, and spending patterns.
-- [TODO] Step 6: Implement the what-if scenario simulation module to allow users to test how changes in income, savings, or expenses affect their financial health score and detected mistakes.
-- [TODO] Step 7: Design and implement the LangGraph workflow by defining the state, nodes (input parser, mistake detector, RAG retriever, scorer, and simulator), and transitions between them.
-- [TODO] Step 8: Test the complete system on multiple user finance profiles, analyze the quality of mistake detection and recommendations, and document the results and limitations in the final report.
+The project was implemented in the following stages:
+
+1. Collected and prepared a small personal finance knowledge base including budgeting rules, savings guidelines, and emergency fund norms.
+2. Designed the input schema to collect user income, expenses, and savings through a conversational interface.
+3. Implemented the core financial mistake detection logic using numerical calculations for savings rate, expense-to-income ratio, and emergency fund adequacy.
+4. Integrated retrieval-based explanations using the knowledge base to justify detected mistakes and recommendations.
+5. Designed and implemented the financial health score module.
+6. Implemented the what-if scenario simulation module to test changes in income, expenses, and savings.
+7. Built the multi-step assistant workflow using a structured control flow.
+8. Tested the system on multiple user profiles and documented the results.
+
 
 
 ## Conclusion:
 
-I had planned to achieve {this this}. I think I have/have-not achieved the conclusion satisfactorily. The reason for your satisfaction/unsatisfaction.
+This project successfully implements an AI-based personal finance mistake detector that analyzes user income, expenses, and savings to generate a financial health score, detect financial risks, and provide actionable recommendations. The assistant also supports what-if simulations to help users understand how changes in spending and saving behavior affect their financial health. The project demonstrates the effective use of structured prompting, knowledge-based reasoning, and multi-step decision workflows for real-world financial applications.
+
 
 ----------
 
