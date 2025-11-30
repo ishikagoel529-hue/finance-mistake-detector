@@ -50,8 +50,6 @@ Make a short -  3-5 min video of yourself, put it on youtube/googledrive, and pu
 
 ## Plan
 
-## Plan
-
 The project was implemented in the following stages:
 
 1. Collected and prepared a small personal finance knowledge base including budgeting rules, savings guidelines, and emergency fund norms.
