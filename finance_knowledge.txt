@@ -12,3 +12,17 @@ Spending more than 80 percent of income on monthly expenses increases the risk o
 
 Low Savings Risk:
 Saving less than 10 percent of income makes it difficult to achieve long-term financial goals such as buying a home or retirement planning.
+Debt Rule:
+If EMI payments exceed 30 percent of income, the user is at high debt risk.
+
+Investment Rule:
+Not investing any money leads to long-term wealth loss.
+
+Impulse Spending Rule:
+Frequent small purchases add up to major monthly expense leakage.
+
+Rent Rule:
+Housing costs should ideally not exceed 30 percent of income.
+
+Savings Consistency Rule:
+Irregular saving behavior creates financial instability.
