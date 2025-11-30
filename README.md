@@ -28,12 +28,13 @@ The first purpose of the capstone project is to give a chance to revise all the 
 
 ## Overview
 
-This project implements an AI assistant that helps users detect mistakes in their personal finance habits. The assistant takes inputs such as income, expenses, savings, and investments, and identifies common financial mistakes such as low savings rate, absence of emergency fund, overspending, or poor investment distribution. It also generates a financial health score and allows users to simulate what-if scenarios to see how changes in their financial behavior impact their overall financial well-being. The system is built using LangGraph, structured prompting, retrieval-augmented generation (RAG), and tool calling.
+This project implements an AI-powered personal finance assistant that helps users detect common financial mistakes based on their monthly income, expenses, and savings. The system performs structured financial analysis, generates a financial health score, identifies financial risks, and provides personalized recommendations. It also integrates a retrieval-augmented knowledge base (RAG) and a what-if simulation module to help users explore how financial changes affect their overall financial health.
+The assistant is implemented as a clean, stable command-line chatbot that demonstrates core LLM system design concepts using rule-based reasoning and external knowledge retrieval.
 
 
 ## Reason for picking up this project
 
-I picked this project because it closely aligns with both my academic interest in finance and the core concepts taught in this course. Through this project, I am able to apply structured prompting, tool calling for numerical financial computations, semantic search, retrieval-augmented generation (RAG), and LangGraph for building a multi-step AI workflow. The project demonstrates how large language models can be used beyond simple chat systems, to build an intelligent decision-support system in the domain of personal finance, which directly reflects the objectives of this course.
+This project aligns closely with my academic background in mathematics and finance. It allowed me to apply concepts of structured prompting, numerical computation, semantic search, retrieval-augmented generation (RAG), and multi-step workflow design using LangGraph principles. The project demonstrates how AI systems can extend beyond chat and function as intelligent decision-support tools in the personal finance domain.
 
 
 ## Video Summary Link: 
@@ -65,7 +66,7 @@ The project was implemented in the following stages:
 
 ## Conclusion:
 
-This project successfully implements an AI-based personal finance mistake detector that analyzes user income, expenses, and savings to generate a financial health score, detect financial risks, and provide actionable recommendations. The assistant also supports what-if simulations to help users understand how changes in spending and saving behavior affect their financial health. The project demonstrates the effective use of structured prompting, knowledge-based reasoning, and multi-step decision workflows for real-world financial applications.
+The Personal Finance Mistake Detector AI successfully analyzes user spending behavior, identifies financial risks, and provides actionable guidance backed by financial knowledge. It effectively demonstrates real-world application of AI workflows taught in MAT496 and highlights the usefulness of LLM-driven decision-support systems
 
 
 ----------
