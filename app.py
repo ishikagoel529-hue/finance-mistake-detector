@@ -2,6 +2,15 @@ from typing import TypedDict
 from langgraph.graph import StateGraph, END
 
 
+# Load finance knowledge base from text file
+def load_knowledge_base(file_path: str) -> str:
+    with open(file_path, "r") as f:
+        return f.read()
+
+
+FINANCE_KNOWLEDGE = load_knowledge_base("finance_knowledge.txt")
+
+
 # 1. Define the state that flows through the graph
 class FinanceState(TypedDict):
     income: float
@@ -37,7 +46,7 @@ def analysis_node(state: FinanceState) -> FinanceState:
     return state
 
 
-# 3. Node 2: Mistake detection, scoring, and recommendations
+# 3. Node 2: Mistake detection, scoring, recommendations, and simple RAG explanations
 def recommendation_node(state: FinanceState) -> FinanceState:
     income = state["income"]
     expenses = state["expenses"]
@@ -62,21 +71,25 @@ def recommendation_node(state: FinanceState) -> FinanceState:
 
     mistakes = []
 
+    # Savings rule
     if savings_rate < 0.10:
         mistakes.append("Very low savings rate (less than 10% of income).")
     elif savings_rate < 0.20:
         mistakes.append("Savings rate is below recommended 20% of income.")
 
+    # Expense rule
     if expense_ratio > 0.80:
         mistakes.append("Expenses are more than 80% of income (very tight budget).")
     elif expense_ratio > 0.70:
         mistakes.append("Expenses are more than 70% of income (limited flexibility).")
 
+    # Emergency fund rule
     if emergency_months < 1:
         mistakes.append("No emergency fund (less than 1 month of expenses saved).")
     elif emergency_months < 3:
         mistakes.append("Emergency fund is small (less than 3 months of expenses).")
 
+    # Health score
     score = 100
 
     if savings_rate < 0.10:
@@ -108,6 +121,7 @@ def recommendation_node(state: FinanceState) -> FinanceState:
         lines.append("")
         lines.append("Recommended actions to improve your finances:")
 
+        # Expense management advice
         if expense_ratio > 0.70:
             target_expenses = 0.70 * income
             cut_needed = expenses - target_expenses
@@ -117,6 +131,7 @@ def recommendation_node(state: FinanceState) -> FinanceState:
                     f"to bring them under 70% of your income."
                 )
 
+        # Savings advice
         if savings_rate < 0.20:
             target_savings = 0.20 * income
             extra_savings_needed = target_savings - savings
@@ -126,6 +141,7 @@ def recommendation_node(state: FinanceState) -> FinanceState:
                     f"to reach a 20% savings rate."
                 )
 
+        # Emergency fund advice
         if emergency_months < 3 and expenses > 0:
             target_emergency = 3 * expenses
             extra_needed = target_emergency - savings
@@ -134,6 +150,28 @@ def recommendation_node(state: FinanceState) -> FinanceState:
                     f"- Build an emergency fund of at least 3 months of expenses. "
                     f"You need about {extra_needed:.2f} more saved."
                 )
+
+        # --- Simple RAG-style explanations from knowledge base (hard-coded from your rules) ---
+        lines.append("")
+        lines.append("Why these issues matter (from knowledge base):")
+
+        if savings_rate < 0.20:
+            lines.append(
+                "- Savings Rule: Financial planners generally recommend saving at least "
+                "20 percent of monthly income to build long-term wealth and financial security."
+            )
+
+        if expense_ratio > 0.70:
+            lines.append(
+                "- Expense Rule: If monthly expenses exceed 70 percent of income, the individual "
+                "may face budgeting stress and limited flexibility for emergencies and investments."
+            )
+
+        if emergency_months < 3:
+            lines.append(
+                "- Emergency Fund Rule: A basic emergency fund should cover at least 3 to 6 months "
+                "of essential living expenses to protect against job loss or medical emergencies."
+            )
     else:
         lines.append("")
         lines.append("No major issues detected based on these simple rules. Good job!")
