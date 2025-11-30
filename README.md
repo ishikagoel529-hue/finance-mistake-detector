@@ -56,7 +56,7 @@ The project was implemented in the following stages:
 1. Collected and prepared a small personal finance knowledge base including budgeting rules, savings guidelines, and emergency fund norms.
 2. Designed the input schema to collect user income, expenses, and savings through a conversational interface.
 3. Implemented the core financial mistake detection logic using numerical calculations for savings rate, expense-to-income ratio, and emergency fund adequacy.
-4. Integrated retrieval-based explanations using the knowledge base to justify detected mistakes and recommendations.
+4. Integrated retrieval-based explanations using a small financial knowledge base and simple semantic keyword search to justify detected mistakes and recommendations.
 5. Designed and implemented the financial health score module.
 6. Implemented the what-if scenario simulation module to test changes in income, expenses, and savings.
 7. Built the multi-step assistant workflow using a structured control flow.
